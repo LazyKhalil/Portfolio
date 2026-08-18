@@ -17,11 +17,13 @@
    <link rel="stylesheet" href="skills.css">
 </head>
 <body>
-    <video autoplay muted loop id="bg-video">
+    <video autoplay muted loop playsinline class="bg-video bg-video-desktop">
     <source src="video2.mp4" type="video/mp4">
-    
-    Your browser does not support the video tag.
-  </video>
+</video>
+
+<video autoplay muted loop playsinline class="bg-video bg-video-mobile">
+    <source src="videomob.mp4" type="video/mp4">
+</video>
     <div class="header"> 
         <button class="btn-left">dark mode</button>
         <button class="btn-right" onclick="location.href='index.html'">Home</button>
@@ -35,10 +37,11 @@
                <p class="text">Technologies, Tools & Languages I Use To Bring Ideas To Life.</p>
             </div>
             <div class="box" style="grid-area: box2;">
-               <div class="coursework">
-                        <i class="bx bx-code-alt code-icon"></i>
-                        <p class="programing-text"> Programming & Markup Languages.</p>
+                <i class="bx bx-code-alt code-icon"></i>
+                <p class="programing-text"> Programming & Markup Languages.</p>
 
+               <div class="coursework">
+                        
                         <div class="course">
                 
                             <div class="progress-container">
@@ -156,10 +159,11 @@
                </div>
             </div>
             <div class="box" style="grid-area: box4;">
-                <div class="coursework">
-                        <i class="bx bxs-wrench code-icon"></i>
-                        <p class="programing-text"> Tools & Technologies.</p>
+                 <i class="bx bxs-wrench tool-icon"></i>
+                <p class="programing-text"> Tools & Technologies.</p>
 
+                <div class="coursework">
+                        
                         <div class="course">
                 
                             <div class="progress-container">
