@@ -4,18 +4,18 @@
             overflow-x: hidden;
            
         }
-        #bg-video {
-        position: fixed;   
+        .bg-video {
+        position: fixed;
         right: 0;
         bottom: 0;
-        min-width: 100%;   
-        min-height: 100%;  
-        z-index: -1;       
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
         object-fit: cover;
-        transform: translateZ(0);
         }
-        html {
-        overflow-x: hidden;
+
+       .bg-video-mobile {
+        display: none;     
         }
         .header{
             height: 50px;
@@ -69,7 +69,7 @@
             
             display: grid;
             grid-template-columns: 1fr 1fr 1fr ;
-            grid-template-rows: auto 300px 300px;
+            grid-template-rows: auto 265px 265px;
             margin-top: 70px;
             gap: 1em;
             grid-template-areas:"box1 box1 box1"
@@ -106,7 +106,7 @@
             font-family: "Archivo Black", sans-serif;
             font-size: 80px;
             color: rgb(175, 208, 181);
-            margin-top: 5px;
+            margin-top: -15px;
         }
         .text{
             
@@ -119,25 +119,24 @@
         }
         .profile-image{
             width: 83%;
-            height: 100%;
+            height: 115%;
             max-height: 616px;
             object-fit: cover;
-            border-radius: 12px;
-            margin-top: -50px;
+            margin-top: -65px;
             margin-left: 45px;
             position: relative;
-            filter: brightness(93%) drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+            filter: brightness(85%) drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
             
 
         }
         
         .img-text{
             font-family:  "Archivo Black", sans-serif;
-            font-size: 100px;
+            font-size: 80px;
             color: rgb(175, 208, 181);
             position: absolute;
-            top: -115px;
-            left: 138px;
+            top: -100px;
+            left: 130px;
             text-shadow: 8px  4px rgb(0, 0, 0);
             filter: brightness(90%);
             transition: all 0.3s ease-in-out;
@@ -149,10 +148,10 @@
         }
         .focus-img{
             position: relative;
-            width: 220px;
-            height: 220px;
-            margin-top: -30px;
-            margin-left: 160px;
+            width: 190px;
+            height: 190px;
+            margin-top: -25px;
+            margin-left: 140px;
             filter: brightness(93%) drop-shadow(0 0 5px rgba(15, 255, 91, 0.822));
             transition: filter 0.3s ease-in-out;
         }
@@ -162,42 +161,44 @@
         }
         .title{
             font-family: "Archivo Black", sans-serif;
-            font-size: 40px;
+            font-size: 35px;
             color: rgb(175, 210, 182);
             position: absolute;
-            top: 120px;
-            left: 115px;
+            top: 110px;
+            left: 90px;
         }
         .title1{
             font-family: "Archivo Black", sans-serif;
-            font-size: 40px;
+            font-size: 35px;
             color: rgb(175, 210, 182);
             position: absolute;
-            top: 120px;
+            top: 110px;
             left: 75px;
         }
         .title2{
             font-family: "Archivo Black", sans-serif;
-            font-size: 40px;
+            font-size: 32px;
             color: rgb(175, 210, 182);
             position: absolute;
-            top: 130px;
-            left: 97px;
+            top: 110px;
+            left: 100px;
         }
         .caption{
             font-family: "Montserrat", sans-serif;
             color: rgb(224, 244, 228);
-            font-size: 20px;
+            font-size: 17px;
             text-align: center;
             margin-top: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
 
         }
         .online-img{
             position: relative;
-            width: 190px;
-            height: 190px;
-            margin-top: -20px;
-            margin-left: 170px;
+            width: 150px;
+            height: 150px;
+            margin-top: -5px;
+            margin-left: 165px;
             filter: brightness(93%) drop-shadow(0 0 5px rgba(15, 255, 91, 0.822));
             transition: filter 0.3s ease-in-out;
         }
@@ -233,7 +234,7 @@
         }
         }
 
-        .box {
+        div {
         animation: fadeIn 1.5s ease-out forwards;
         }
     
@@ -272,6 +273,12 @@
 
 
 @media (max-width: 600px) {
+    .bg-video-desktop {
+        display: none;   
+    }
+    .bg-video-mobile {
+        display: block; 
+    }
     .header{
         flex-wrap: wrap;
         height: auto;
