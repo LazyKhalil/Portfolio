@@ -14,14 +14,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="academic.css">>
+    <link rel="stylesheet" href="academic.css">
 </head>
 <body>
-     <video autoplay muted loop id="bg-video">
+     <video autoplay muted loop playsinline class="bg-video bg-video-desktop">
     <source src="video2.mp4" type="video/mp4">
-    
-    Your browser does not support the video tag.
-  </video>
+</video>
+
+<video autoplay muted loop playsinline class="bg-video bg-video-mobile">
+    <source src="videomob.mp4" type="video/mp4">
+</video>
     <div class="header"> 
         <button class="btn-left">dark mode</button>
         <button class="btn-right" onclick="location.href='index.html'">Home</button>
