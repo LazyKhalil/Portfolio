@@ -360,7 +360,7 @@ body{
         gap: 4px;
     }
     .btn-left, .btn-right, .btn-right.active{
-        font-size: 8px;
+        font-size: 9px;
         height: auto;
         padding: 4px 6px;
         margin: 0 2px;
