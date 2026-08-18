@@ -326,7 +326,7 @@
     .box{
         min-height: auto;
         padding-bottom: 15px;
-           background-color: rgba(73, 92, 81, 0.274);
+           background-color: rgba(73, 92, 81, 0.37);
             backdrop-filter: blur(20px);                
             -webkit-backdrop-filter: blur(20px);       
     }
@@ -337,7 +337,7 @@
         margin-left: 0;
         margin-bottom: -20px;
         margin-top: 10px;
-        filter: brightness(60%) drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+        filter: brightness(55%) drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
     }
     .big3{
         margin-top: -65px;
