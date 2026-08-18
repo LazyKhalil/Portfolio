@@ -595,7 +595,7 @@
             position: absolute;
             
             font-size: 30px;
-            top: -5px;
+            top: 15px;
             left: 5px;
             color: rgb(27, 150, 27);
         }
@@ -630,6 +630,13 @@
         width: 12px;
         height: 12px;
     }
+    .tool-icon{
+             position: absolute;
+            font-size: 30px;
+            color: rgb(27, 150, 27);
+            left: 60px;
+            top: 15px;
+        }
     .vs-icon{
             
             position: absolute;
@@ -723,7 +730,7 @@
         font-size: 16px;
     }
     .world-icon{
-        left: 110px;
+        left: 130px;
         top: 15px;
         font-size: 20px;
     }
