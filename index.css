@@ -1,0 +1,374 @@
+ body{
+           
+            margin: 0;
+           
+        }
+        #bg-video {
+        position: fixed;   
+        right: 0;
+        bottom: 0;
+        min-width: 100%;   
+        min-height: 100%;  
+        z-index: -1;       
+        object-fit: cover;
+        }
+        .header{
+            height: 50px;
+            display: flex;
+            align-items: center;
+            width: 99%;
+            background-color: rgba(11, 43, 38, 0.6);
+            backdrop-filter: blur(10px);                
+            -webkit-backdrop-filter: blur(15px);       
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.377);
+
+            position: fixed;
+            top: 10px;
+            left: 5px;
+            z-index: 100;
+            
+           
+        }
+        .btn-left{
+            margin-left: 5px;
+           margin-right: auto;
+           border: none;
+           background-color:transparent;
+           height: 40px;
+           font-family: "Montserrat", sans-serif;
+           font-size: 16px;
+           cursor: pointer;
+           color: rgb(40, 204, 40);
+            text-decoration: underline;
+
+        }
+        .btn-right{
+            margin-right: 5px;
+            margin-left: 10px;
+            border: none;
+            background-color:transparent;
+            height: 40px;
+            font-family: "Montserrat", sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+            color: rgb(220, 247, 225);
+        }
+        .btn-right.active {
+            color: rgb(40, 204, 40);
+            text-decoration: underline;
+            font-size: 16px;
+            font-family: "Montserrat", sans-serif;
+        }
+        .grid-container{
+            
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-rows: auto 300px 300px;
+            margin-top: 70px;
+            gap: 1em;
+            grid-template-areas:"box1 box1 box1"
+                                "box2 box3 box4"
+                                "box5 box3 box6";
+            z-index: 2;
+        }
+        .box{
+            
+              background-color: rgba(255, 255, 255, 0.2); 
+            backdrop-filter: blur(50px) !important;                
+            -webkit-backdrop-filter: blur(10px);       
+            border-radius: 12px;                        
+            border: 1px solid rgba(255, 255, 255, 0.3); 
+ 
+        }
+        .big1{
+            height: auto;
+            background: transparent;
+            border: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+        
+           
+        }
+        .big3{
+            background: transparent;
+            border: none;
+        }
+        .welcome-text{
+            display: inline-block;
+            font-family: "Archivo Black", sans-serif;
+            font-size: 80px;
+            color: rgb(175, 208, 181);
+            margin-top: 5px;
+        }
+        .text{
+            
+            font-family: "Montserrat", sans-serif;
+            font-size: 20px;
+            color: rgb(224, 255, 230);
+            margin-top: -85px;
+            margin-bottom:20px;
+
+        }
+        .profile-image{
+            width: 83%;
+            height: 660px;
+            border-radius: 12px;
+            margin-top: -50px;
+            margin-left: 45px;
+            position: relative;
+            filter: brightness(93%) drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+            
+
+        }
+        
+        .img-text{
+            font-family:  "Archivo Black", sans-serif;
+            font-size: 100px;
+            color: rgb(175, 208, 181);
+            position: absolute;
+            top: -115px;
+            left: 138px;
+            text-shadow: 8px  4px rgb(0, 0, 0);
+            filter: brightness(90%);
+            transition: all 0.3s ease-in-out;
+        }
+        .img-text:hover {
+            filter: brightness(100%);
+            text-shadow: 12px 8px rgb(0, 0, 0);
+            transition: all 0.3s ease-in-out;
+        }
+        .focus-img{
+            position: relative;
+            width: 220px;
+            height: 220px;
+            margin-top: -30px;
+            margin-left: 160px;
+            filter: brightness(93%) drop-shadow(0 0 5px rgba(15, 255, 91, 0.822));
+            transition: filter 0.3s ease-in-out;
+        }
+        .focus-img:hover {
+            filter: brightness(100%) drop-shadow(0 0 13px rgba(15, 255, 91, 0.822));
+            transition: filter 0.3s ease-in-out;
+        }
+        .title{
+            font-family: "Archivo Black", sans-serif;
+            font-size: 40px;
+            color: rgb(175, 210, 182);
+            position: absolute;
+            top: 120px;
+            left: 115px;
+        }
+        .title1{
+            font-family: "Archivo Black", sans-serif;
+            font-size: 40px;
+            color: rgb(175, 210, 182);
+            position: absolute;
+            top: 120px;
+            left: 75px;
+        }
+        .title2{
+            font-family: "Archivo Black", sans-serif;
+            font-size: 40px;
+            color: rgb(175, 210, 182);
+            position: absolute;
+            top: 130px;
+            left: 97px;
+        }
+        .caption{
+            font-family: "Montserrat", sans-serif;
+            color: rgb(224, 244, 228);
+            font-size: 20px;
+            text-align: center;
+            margin-top: 30px;
+
+        }
+        .online-img{
+            position: relative;
+            width: 190px;
+            height: 190px;
+            margin-top: -20px;
+            margin-left: 170px;
+            filter: brightness(93%) drop-shadow(0 0 5px rgba(15, 255, 91, 0.822));
+            transition: filter 0.3s ease-in-out;
+        }
+        .online-img:hover{
+            filter: brightness(100%) drop-shadow(0 0 13px rgba(15, 255, 91, 0.822));
+            transition: filter 0.3s ease-in-out;
+        }
+        .github-icon{
+           
+            margin-bottom: -105px;
+            margin-left: -250px;
+            
+        }
+        .gmail-icon{
+            margin-bottom: -105px;
+            margin-left: 80px;
+           
+        }
+        .insta-icon{
+             
+            margin-bottom: -110px;
+            margin-left: 80px;
+            
+        }
+        @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px); 
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        }
+
+        div {
+        animation: fadeIn 1.5s ease-out forwards;
+        }
+    
+   
+@media (max-width: 1024px) {
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "box1 box1"
+                              "box2 box4"
+                              "box5 box6"
+                              "box3 box3";
+    }
+    .welcome-text{
+        font-size: 60px;
+    }
+    .text{
+        margin-top: -30px;
+        font-size: 18px;
+    }
+    .profile-image{
+        width: 100%;
+        height: 450px;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .img-text{
+        font-size: 70px;
+        top: -60px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .header{
+        flex-wrap: wrap;
+        height: auto;
+        width: 94%;
+        padding: 6px 0;
+        gap: 4px;
+    }
+    .btn-left, .btn-right, .btn-right.active{
+        font-size: 8px;
+        height: auto;
+        padding: 4px 6px;
+        margin: 0 2px;
+    }
+    .btn-left{
+        margin-right: auto;
+    }
+
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "box1"
+                              "box3"
+                              "box2"
+                              "box4"
+                              "box5"
+                              "box6"
+                              ;
+        margin-top: 60px;
+        gap: 0.8em;
+        padding: 0 8px;
+    }
+
+    .welcome-text{
+        font-size: 36px;
+        text-align: center;
+        
+    }
+    .text{
+        text-align: center;
+        font-size: 15px;
+        margin-top: -35px;
+        margin-bottom: 15px;
+    }
+
+    .box{
+        min-height: auto;
+        padding-bottom: 15px;
+          background-color: rgba(255, 255, 255, 0.2); 
+            backdrop-filter: blur(20px);                
+            -webkit-backdrop-filter: blur(20px);       
+    }
+
+    .profile-image{
+        width: 100%;
+        height: 500px;
+        margin-left: 0;
+        margin-bottom: -20px;
+        margin-top: 10px;
+        filter: brightness(70%) drop-shadow(0 0 15px rgba(0, 0, 0, 1));
+    }
+    .big3{
+        margin-top: -65px;
+        background-color: transparent;
+        border: none;
+    }
+    .big1{
+        background-color: transparent;
+        border: none;
+    }
+    .img-text{
+        position: absolute;
+        font-size: 42px;
+        text-align: center;
+        width: 100%;
+        top: 0px;
+        left: 5px;
+        text-shadow: 4px 3px rgb(0, 0, 0);
+        transform: none;
+    }
+
+    .focus-img, .online-img{
+        display: block;
+        width: 150px;
+        height: 150px;
+        max-width: 150px;
+        margin: 15px auto 0 auto;
+    }
+
+    .title, .title1, .title2{
+        position: static;
+        font-size: 24px;
+        text-align: center;
+        margin: 10px 0 0 0;
+    }
+
+    .caption{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .github-icon, .gmail-icon, .insta-icon{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin: 10px 5px 0 60px;
+    }
+}

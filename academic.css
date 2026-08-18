@@ -1,0 +1,449 @@
+body{
+           
+            margin: 0;
+           
+        }
+        p{
+            margin: 0;
+        }
+       
+        #bg-video {
+        position: fixed;   
+        right: 0;
+        bottom: 0;
+        min-width: 100%;   
+        min-height: 100%;  
+        z-index: -1;       
+        object-fit: cover;
+        }
+        .header{
+            height: 50px;
+            display: flex;
+            align-items: center;
+            width: 99%;
+            background-color: rgba(11, 43, 38, 0.6);
+            backdrop-filter: blur(10px);                
+            -webkit-backdrop-filter: blur(15px);       
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.377);
+
+            position: fixed;
+            top: 10px;
+            left: 5px;
+            z-index: 100;
+            
+           
+        }
+        .btn-left{
+            margin-left: 10px;
+           margin-right: auto;
+           border: none;
+           background-color:transparent;
+           height: 40px;
+           font-family: "Montserrat", sans-serif;
+           font-size: 16px;
+           cursor: pointer;
+           color: rgb(40, 204, 40);
+            text-decoration: underline;
+
+
+        }
+        .btn-right{
+            margin-right: 10px;
+            margin-left: 10px;
+            border: none;
+            background-color:transparent;
+            height: 40px;
+            font-family: "Montserrat", sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+            color: rgb(220, 247, 225);
+        }
+        .btn-right.active {
+            color: rgb(40, 204, 40);
+            text-decoration: underline;
+            font-size: 16px;
+            font-family: "Montserrat", sans-serif;
+        }
+        .grid-container{
+            
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-rows: auto 130px 470px;
+            margin-top: 70px;
+            gap: 1em;
+            grid-template-areas:"box1 box1 box1"
+                                "box2 box3 box4"
+                                "box5 box5 box6";
+            z-index: 2;
+        }
+        .box{
+            
+             background-color: rgba(255, 255, 255, 0.2); 
+            backdrop-filter: blur(20px);                
+            -webkit-backdrop-filter: blur(10px);       
+            border-radius: 12px;                        
+            border: 1px solid rgba(255, 255, 255, 0.3); 
+ 
+        }
+        .big1{
+            height: 150px;
+            background: transparent;
+            border: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+        }
+        .acadimic-text{
+            
+            font-family: "Archivo Black", sans-serif;
+            font-size: 80px;
+            color: rgb(175, 208, 181);
+            margin-top: -10px;
+            
+        }
+         .text{
+            
+            font-family: "Montserrat", sans-serif;
+            font-size: 20px;
+            color: rgb(224, 255, 230);
+            margin-top: 15px;
+            margin-bottom:20px;
+
+        }
+        .big2{
+            display: flex;
+            flex-direction: row;
+        }
+        .education-div{
+            height: 70px;
+            width: 70px;
+            margin-top: 29px;
+            margin-left: 30px;     
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.354);
+            
+        }
+        .text-div{
+            height: 90px;
+            width: 420px;
+            margin-left: 25px;
+            margin-top: 20px;
+            
+        
+        }
+        .education-img{
+            height: 70px;
+            width: 65px;
+            filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1.5));
+            
+            
+        }
+        .uni-img{
+            height: 45px;
+            width: 85px;
+            filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1.5));
+            margin-top: 10px;
+            margin-left: -8px;   
+                  
+        }
+        .goal-img{
+            height: 55px;
+            filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1.5));
+            margin-top: 7px;
+            margin-left: -23px; 
+        }
+        .education-title{
+            font-family: "Montserrat", sans-serif;
+            color: rgb(229, 249, 233);
+            margin-left: 5px;
+           
+        }
+        .education-level{
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            color: rgb(215, 246, 221);
+            margin-top: 10px;
+            margin-left: 5px;
+            margin-bottom: 10px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:"Montserrat", sans-serif;
+            color: rgb(229, 249, 241)
+        }
+        .timeline-wapper{
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: -50px;
+            
+        }
+        .timeline-row{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+        }
+        
+
+        
+        .heading{
+            font-size: 25px;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .heading i{
+            font-size: 30px;
+            color: rgb(16, 165, 16);
+        }
+        .content-box{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+            margin: 0;
+
+        }
+        .timeline-box{
+           
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            border-left: 3px solid rgb(16, 165, 16);
+        }
+        
+        .content-box h3{
+            font-size: 20px;
+        }
+        .date{
+            font-size: 20px;
+            color: rgb(16, 165, 16);
+            font-weight: 700;
+        }
+        .content-box::before{
+            position: absolute;
+            content: '';
+            width: 12px;
+            height: 12px;
+            background-color:rgb(16, 165, 16);
+            border-radius: 50%;
+            left: -39px;
+        }
+        .big3{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .coursework {
+        margin-top: 25px;
+        margin-right: 50px;
+        margin-left: 50px;
+        font-family: "Montserrat", sans-serif;
+        color: rgb(224, 255, 230);
+        }
+        
+
+        .course {
+        margin-top: 40px;
+        margin-bottom:48px;
+        position: relative;
+
+        }
+
+        .course p {
+        margin-bottom: 8px;
+        font-weight: 600;
+        }
+
+        .progress-container {
+        width: 87%;
+        background-color: rgba(255, 255, 255, 0.1); 
+        border-radius: 12px;
+        overflow: hidden;
+        margin-top: 15px;
+        box-shadow:  0 0 5px rgb(25, 255, 25),
+                     0 0 10px rgba(255, 255, 255, 0.757);
+
+        }
+
+        .progress-bar {
+        height: 7px;
+        background-color: rgb(16, 165, 16); 
+        text-align: right;
+        padding-right: 10px;
+        line-height: 25px;
+        color: white;
+        font-weight: bold;
+        transition: width 0.6s ease; 
+        box-shadow: 0 0 15px rgb(25, 255, 25),
+                     0 0 30px rgba(255, 255, 255, 0.757);
+        }
+        .progress-text{
+            position: absolute;
+            top: 30px;
+            right: 5px;
+            text-shadow: 0 0 5px rgba(245, 245, 245, 0.667);
+        }
+        .my-icon{
+            margin-right: 10px;
+            color: rgb(16, 165, 16);
+            font-size: 35px;
+        }
+        @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px); 
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        }
+
+        div {
+        animation: fadeIn 1.5s ease-out forwards;
+        }
+        
+@media (max-width: 1024px) {
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "box1 box1"
+                              "box2 box3"
+                              "box4 box6"
+                              "box5 box5";
+    }
+    .acadimic-text{
+        font-size: 55px;
+        text-align: center;
+    }
+    .text-div{
+        width: 100%;
+        max-width: 320px;
+    }
+    .timeline-wapper{
+        margin-left: 0;
+    }
+    .coursework{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .header{
+        flex-wrap: wrap;
+        height: auto;
+        width: 94%;
+        padding: 6px 0;
+        justify-content: center;
+        gap: 4px;
+    }
+    .btn-left, .btn-right, .btn-right.active{
+        font-size: 8px;
+        height: auto;
+        padding: 4px 6px;
+        margin: 0 2px;
+    }
+    .btn-left{
+        margin-right: auto;
+    }
+
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "box1"
+                              "box2"
+                              "box3"
+                              "box4"
+                              "box5"
+                              "box6";
+        margin-top: 60px;
+        gap: 0.8em;
+        padding: 0 8px;
+    }
+
+    .big1{
+        
+        height: auto;
+        padding: 15px 10px;
+    }
+    .acadimic-text{
+        font-size: 34px;
+        text-align: center;
+        line-height: 1.1;
+    }
+    .text{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .big2{
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+    .education-div{
+        margin: 10px auto 0 auto;
+    }
+    .text-div{
+        width: 100%;
+        max-width: 260px;
+        margin-left: 0;
+        margin-top: 10px;
+        height: auto;
+        text-align: center;
+    }
+    .education-title, .education-level{
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .timeline-wapper{
+        margin-left: 0px;
+        padding-left: 40px;
+        padding-bottom: 25px;
+    }
+    .timeline-row{
+        grid-template-columns: 1fr;
+    }
+    .heading{
+        font-size: 20px;
+    }
+    .content-box{
+        padding: 15px 10px;
+    }
+    .content-box h3{
+        font-size: 17px;
+    }
+    .date{
+        font-size: 15px;
+    }
+    .content-box::before{
+        left: -33px;
+    }
+
+    .coursework{
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+    .progress-container{
+        width: 100%;
+    }
+    .progress-text{
+        position: absolute;
+        top: 0px;
+    }
+
+    
+}

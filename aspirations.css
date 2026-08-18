@@ -1,0 +1,348 @@
+ body{
+           
+            margin: 0;
+           
+        }
+         p{
+            margin: 0;
+        }
+        #bg-video {
+        position: fixed;   
+        right: 0;
+        bottom: 0;
+        min-width: 100%;   
+        min-height: 100%;  
+        z-index: -1;       
+        object-fit: cover;
+        }
+        .header{
+            height: 50px;
+            display: flex;
+            align-items: center;
+            width: 99%;
+            background-color: rgba(11, 43, 38, 0.6);
+            backdrop-filter: blur(10px);                
+            -webkit-backdrop-filter: blur(15px);       
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.377);
+
+            position: fixed;
+            top: 10px;
+            left: 5px;
+            z-index: 100;
+            
+           
+        }
+        .btn-left{
+            margin-left: 10px;
+           margin-right: auto;
+           border: none;
+           background-color:transparent;
+           height: 40px;
+           font-family: "Montserrat", sans-serif;
+           font-size: 16px;
+           cursor: pointer;
+           color: rgb(40, 204, 40);
+            text-decoration: underline;
+
+        }
+        .btn-right{
+            margin-right: 10px;
+            margin-left: 10px;
+            border: none;
+            background-color:transparent;
+            height: 40px;
+            font-family: "Montserrat", sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+            color: rgb(220, 247, 225);
+        }
+        .btn-right.active {
+            color: rgb(40, 204, 40);
+            text-decoration: underline;
+            font-size: 16px;
+            font-family: "Montserrat", sans-serif;
+        }
+        .grid-container{
+            
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-rows: auto 270px 300px;
+            margin-top: 60px;
+            
+            grid-template-areas:"box1 box1 box1"
+                                "box2 box3 box4"
+                                "box2 box5 box6";
+            z-index: 2;
+        }
+    
+        .big1{
+            height: 150px;
+            background: transparent;
+            border: none;
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+        }
+        .big2{
+            display: flex;
+            flex-direction: column;
+            margin-right: 80px;
+            margin-left: 70px;
+             background-color: rgba(255, 255, 255, 0.2); 
+            backdrop-filter: blur(20px);                
+            -webkit-backdrop-filter: blur(10px);        
+            border-radius: 12px;                        
+            border: 1px solid rgba(255, 255, 255, 0.3); 
+ 
+        }
+        .big4, .big6{
+            margin-right: 70px;
+        }
+        .big5, .big6{
+            border-top: 1px solid rgba(133, 137, 134, 0.473);
+        }
+        .big5, .big3{
+            border-right: 1px solid rgba(133, 137, 134, 0.422);
+        }
+        .big4, .big3, .big5, .big6{
+            display: flex;
+            flex-direction: row;
+        }
+          .aspirations-text{
+            
+            font-family: "Archivo Black", sans-serif;
+            font-size: 80px;
+            color: rgb(175, 208, 181);
+            margin-top: -10px;
+            
+        }
+         .text{
+            
+            font-family: "Montserrat", sans-serif;
+            font-size: 20px;
+            color: rgb(224, 255, 230);
+    
+
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:"Montserrat", sans-serif;
+            color: rgb(229, 249, 241)
+        }
+        .timeline-wapper{
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+        .timeline-row{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+        }
+        
+        .content-box{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+            margin: 0;
+
+        }
+        .timeline-box{
+           
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            border-left: 1px solid rgb(16, 165, 16);
+        }
+        
+        .content-box h3{
+            font-size: 20px;
+        }
+        .date{
+            font-size: 20px;
+            color: rgb(16, 165, 16);
+            font-weight: 700;
+        }
+        .content-box::before{
+            position: absolute;
+            content: '';
+            width: 10px;
+            height: 10px;
+            background-color:rgb(16, 165, 16);
+            border-radius: 50%;
+            left: -5px;
+        }
+        .timelinr-container{
+            margin-left: 30px
+        }
+        .future-text{
+            font-size: 35px;
+            font-weight: 600;
+        }
+        .creat{
+            color: rgb(14, 202, 14);
+        }
+        .text-container{
+            margin-top: 30px;
+            margin-left: 30px;
+            margin-bottom: 30px;
+            margin-right: 40px;
+        }
+        .award-icon{
+            color: rgb(19, 161, 19);
+            font-size: 90px;
+        }
+        .icon-div{
+            height: 140px;
+            margin-top: 100PX;
+           margin-right: 20px;
+            margin-left: 10px;
+        }
+        .text-div{
+            height: 120px;
+            margin-top: 90px;
+            border-left: 2px solid rgb(31, 171, 31);
+            padding-left: 30px;
+            padding-top: 10px;
+            
+        }
+        .asp-title{
+            margin-bottom: 10PX;
+        }
+        .text-div1{
+            margin-right: 30px;
+        }
+        .cama-icon{
+            color: rgb(19, 161, 19);
+            font-size: 30px;
+            margin-bottom: 5px;
+        }
+        @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px); 
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        }
+
+        div {
+        animation: fadeIn 1.5s ease-out forwards;
+        }
+        @media screen and (max-width: 768px) {
+            .header{
+        flex-wrap: wrap;
+        height: auto;
+        width: 94%;
+        padding: 6px 0;
+        justify-content: center;
+        gap: 4px;
+    }
+    .btn-left, .btn-right, .btn-right.active{
+        font-size: 8px;
+        height: auto;
+        padding: 4px 6px;
+        margin: 0 2px;
+    }
+    .btn-left{
+        margin-right: auto;
+    }
+            .grid-container {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                grid-template-areas:
+                    "box1"
+                    "box2"
+                    "box3"
+                    "box4"
+                    "box5"
+                    "box6";
+                margin-top: 60px; 
+                padding: 0 15px;
+            }
+           
+    
+
+    .big1{
+        
+        height: auto;
+        padding: 15px 10px;
+        margin-bottom: 15px;
+    }
+    .aspirations-text{
+        font-size: 34px;
+        text-align: center;
+        line-height: 1.1;
+    }
+    .text{
+        font-size: 15px;
+        text-align: center;
+    }
+
+            
+
+            .big2 {
+                margin-left: 0;
+                margin-right: 0;
+                margin-bottom: 40px;
+            }
+
+            .text-container {
+                margin: 20px 15px;
+            }
+
+            .future-text {
+                font-size: 24px;
+            }
+
+            .timelinr-container {
+                margin-left: 15px;
+                margin-bottom: 20px;
+            }
+
+            .big3, .big4, .big5, .big6 {
+                margin-right: 0;
+                border: none;
+                border-top: 1px solid rgba(133, 137, 134, 0.473);
+                padding: 20px 0;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .icon-div {
+                margin-top: 0;
+                margin-left: 0;
+                margin-right: 15px;
+                height: auto;
+            }
+
+            .award-icon {
+                font-size: 50px;
+            }
+
+            .text-div {
+                margin-top: 0;
+                height: auto;
+                padding-left: 15px;
+            }
+
+            .asp-title {
+                font-size: 18px;
+            }
+
+            .asp-text {
+                font-size: 14px;
+            }
+        }

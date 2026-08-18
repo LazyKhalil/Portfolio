@@ -1,0 +1,721 @@
+ body{
+           
+            margin: 0;
+           
+        }
+         p{
+            margin: 0;
+        }
+        #bg-video {
+        position: fixed;  
+        right: 0;
+        bottom: 0;
+        min-width: 100%;  
+        min-height: 100%; 
+        z-index: -1;       
+        object-fit: cover;
+        }
+        .header{
+            height: 50px;
+            display: flex;
+            align-items: center;
+            width: 99%;
+            background-color: rgba(11, 43, 38, 0.6);
+            backdrop-filter: blur(10px);                
+            -webkit-backdrop-filter: blur(15px);       
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.377);
+
+            position: fixed;
+            top: 10px;
+            left: 5px;
+            z-index: 100;
+            
+           
+        }
+        .btn-left{
+            margin-left: 5px;
+           margin-right: auto;
+           border: none;
+           background-color:transparent;
+           height: 40px;
+           font-family: "Montserrat", sans-serif;
+           font-size: 16px;
+           cursor: pointer;
+           color: rgb(40, 204, 40);
+            text-decoration: underline;
+
+        }
+        .btn-right{
+            margin-right: 5px;
+            margin-left: 10px;
+            border: none;
+            background-color:transparent;
+            height: 40px;
+            font-family: "Montserrat", sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+            color: rgb(220, 247, 225);
+        }
+        .btn-right.active {
+            color: rgb(40, 204, 40);
+            text-decoration: underline;
+            font-size: 16px;
+            font-family: "Montserrat", sans-serif;
+        }
+        .grid-container{
+            
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-rows: auto 300px 300px;
+            margin-top: 60px;
+            gap: 25px;
+            grid-template-areas:"box1 box1 box1"
+                                "box2 box3 box4"
+                                "box5 box6 box7";
+            z-index: 2;
+        }
+        .box{
+            
+             background-color: rgba(255, 255, 255, 0.2); 
+            backdrop-filter: blur(20px);                
+            -webkit-backdrop-filter: blur(10px);       
+            border-radius: 12px;                        
+            border: 1px solid rgba(255, 255, 255, 0.3); 
+ 
+        }
+        .big1{
+            height: 150px;
+            background: transparent;
+            border: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+        }
+          .skills-text{
+            
+            font-family: "Archivo Black", sans-serif;
+            font-size: 80px;
+            color: rgb(175, 208, 181);
+            margin-top: -10px;
+            
+        }
+         .text{
+            
+            font-family: "Montserrat", sans-serif;
+            font-size: 20px;
+            color: rgb(224, 255, 230);
+    
+
+        }
+        .coursework {
+        margin-top: 25px;
+        margin-left: 90px;
+        margin-right: 10px;
+        font-family: "Montserrat", sans-serif;
+        color: rgb(224, 255, 230);
+        }
+        
+
+        .course {
+        margin-top: 25px;
+        margin-bottom:48px;
+        position: relative;
+
+        }
+
+        .course p {
+        margin-bottom: 8px;
+        font-weight: 600;
+        }
+
+        .progress-container {
+        width: 87%;
+        background-color: rgba(255, 255, 255, 0.1); 
+        border-radius: 15px;
+        overflow: hidden;
+        margin-top: 40px;
+        box-shadow:  0 0 5px rgb(25, 255, 25),
+                     0 0 15px rgba(255, 255, 255, 0.757);
+
+        }
+
+        .progress-bar {
+        height: 7px;
+        background-color: rgb(16, 165, 16); 
+        text-align: right;
+        padding-right: 10px;
+        line-height: 25px;
+        color: white;
+        font-weight: bold;
+        transition: width 0.6s ease; 
+        box-shadow: 0 0 15px rgb(25, 255, 25),
+                     0 0 30px rgba(255, 255, 255, 0.757);
+        }
+        .progress-text{
+            position: absolute;
+            top: -5px;
+            right: 5px;
+            text-shadow: 0 0 10px whitesmoke;
+        }
+        .programing-text{
+            font-weight: 700;
+            margin-top: 0px;
+            font-size: 20px;
+            margin-right: 50px;
+            margin-top: -8px;
+        }
+        .html-icon{
+            position: absolute;
+            top: -15px;
+            left: -80px;
+        }
+        .css-icon{
+            position: absolute;
+            top: -15px;
+            left: -45px;
+            font-size: 30px;
+        }
+        .js-icon{
+            position: absolute;
+            top: -19px;
+            left: -63px;
+            
+        }
+        .c-icon{
+             position: absolute;
+            font-size: 40px;
+            top: -19px;
+            left: -63px;
+           
+        }
+        .assemblu-icon{
+            position: absolute;
+            top: -23px;
+            left: -65px;
+        }
+        .code-icon{
+            position: absolute;
+            margin-right: 10px;
+            margin-left: -40px;
+            font-size: 30px;
+            margin-top: 0px;
+            color: rgb(27, 150, 27);
+        }
+        .algorithms{
+            position: relative
+
+        }
+        .skill-item{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 350px;
+            margin-bottom: 12px;
+        }
+        .skill-name{
+            position: relative;
+             color: rgb(224, 255, 230);
+            font-family: "Montserrat", sans-serif;
+            font-size: 16px;
+            margin-left: 40px;
+            margin-bottom: 13px;
+            
+
+        }
+        .dots-rating{
+            position: relative;
+            display: flex;
+            gap: 17px;
+            margin-right: -145px;
+            margin-top: -10px;
+        }
+        .dot{
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: rgb(132, 142, 132);
+            transition: all 0.3s ease;
+        }
+        .dot.activ{
+            background-color: rgb(36, 203, 80);
+            box-shadow: 0 0 10px rgb(244, 247, 244);
+        }
+        .algorithm-text{
+            font-weight: 700;
+            font-family: "Montserrat", sans-serif;
+            text-align: center;
+            font-size: 20px;
+            color: rgb(224, 255, 230);
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+        
+        .data-icon{
+            position: absolute;
+            font-size: 30px;
+            color: rgb(27, 150, 27);
+            left: 95px;
+
+        }
+        .vs-icon{
+            
+            position: absolute;
+            top: -15px;
+            left: -60px;
+        }
+        .git-icon{
+             position: absolute;
+            top: -19px;
+            left: -60px;   
+        }
+        .linux-icon{
+            position: absolute;
+            top: -25px;
+            left: -65px; 
+        }
+        .dots-rating1{
+            margin-top: 35px;
+            margin-bottom: 40px;
+        }
+        .react-icon{
+          position: absolute;
+          top: 23px;
+          left: 108px;
+        }
+        .nodejs-icon{
+            position: absolute;
+            top: 20px;
+            left: 125px;
+        }
+        .frame-icon{
+             position: absolute;
+            font-size: 35px;
+            color: rgb(27, 150, 27);
+            left: 160px;
+            top: -5px;
+
+        }
+        .big4{
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            grid-template-rows: 148px 148px;
+            
+            gap: 2px;
+            grid-template-areas:"bx1 bx2"
+                                "bx3 bx4";
+                        
+            z-index: 2;
+        }
+        .boox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .cercular-img{
+            margin-bottom: 5px;
+            margin-top: 10px;
+            height: 68%;
+
+        }
+        .cercular-text{
+            color: rgb(224, 255, 230);
+            font-family: "Montserrat", sans-serif;
+
+        }
+        .soft-text{
+            position: absolute;
+            color: rgb(224, 255, 230);
+            font-family: "Montserrat", sans-serif;
+            top: 20px;
+            left: 235px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .soft-icon{
+            position: absolute;
+            font-size: 30px;
+            color: rgb(27, 150, 27);
+            left: 199px;
+            top: 18px;
+
+        }
+        .big5{
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .languages-div{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+        .lang-icon-div{
+             background-color: rgba(37, 102, 107, 0.247);       
+            border-radius: 12px;
+            border: 1px solid rgba(251, 251, 251, 0.473);
+
+            height: 68px;
+            width: 100%;
+            display: flex;
+            margin-left: 20px;
+            border-radius: 12px;
+        }
+        .lang-text-div{
+            margin-right: 20px;
+            background-color: rgba(37, 102, 107, 0.247);       
+            border-radius: 12px;
+            border: 1px solid rgba(251, 251, 251, 0.473);
+            height: 65px;
+            width: 100%;
+            border-radius: 12px;
+        }
+        .languages-div1{
+            margin-top: 7px;
+        }
+        .alg-flag{
+            display: inline-block;
+
+            margin-top: 8px;
+            margin-left: 40px;
+        }
+        .lang{
+            display: inline-block;
+            font-size: 17px;
+            font-family: "Montserrat", sans-serif;
+            color: rgb(224, 255, 230);
+            margin-top: 23px;
+            margin-left: 40px;
+            
+        }
+        .lang-lvl-div{
+            background-color: rgba(42, 102, 56, 0.493);       
+            border: 1px solid rgba(189, 185, 185, 0.473);
+            height: 25px;
+            width: 80px;
+            padding-top: 6px;
+            margin-top: 16px;
+            margin-left: 80px;
+            border-radius: 7px;
+            
+        }
+        .lang-lvl-div1{
+            display: inline-block;
+            margin-left: 25px;
+        }
+        .lang-lvl{
+            font-size: 15px;
+            font-family: "Montserrat", sans-serif;
+            color: rgb(22, 224, 62);
+           text-align: center;
+        }
+        .lvl-text{
+            display: inline-block;
+            font-size: 17px;
+            font-family: "Montserrat", sans-serif;
+            color: rgb(22, 224, 62);
+            margin-left: 10px;
+           
+        }  
+        .lang-title{
+            display: inline-block;
+             font-size: 20px;
+             font-weight: 700;
+            font-family: "Montserrat", sans-serif;
+            color: rgb(224, 255, 230);
+            text-align: center;
+            margin-top: 15px;  
+           
+        } 
+        .world-icon{
+          position: absolute;
+            font-size: 30px;
+            color: rgb(27, 150, 27);
+            left: 175px;
+            top: 13px;
+        }
+        @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px); 
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        }
+
+        div {
+        animation: fadeIn 1.5s ease-out forwards;
+        }
+       
+@media (max-width: 1024px) {
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "box1 box1"
+                              "box2 box3"
+                              "box4 box5"
+                              "box6 box6"
+                              "box7 box7";
+    }
+    .skills-text{
+        font-size: 60px;
+        text-align: center;
+    }
+    .coursework{
+        margin-left: 60px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .header{
+        flex-wrap: wrap;
+        height: auto;
+        width: 94%;
+        padding: 6px 0;
+        justify-content: center;
+        gap: 4px;
+    }
+    .btn-left, .btn-right, .btn-right.active{
+        font-size: 8px;
+        height: auto;
+        padding: 4px 6px;
+        margin: 0 2px;
+    }
+    .btn-left{
+        margin-right: auto;
+    }
+
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "box1"
+                              "box2"
+                              "box3"
+                              "box4"
+                              "box5"
+                              "box6"
+                              "box7";
+        margin-top: 60px;
+        gap: 15px;
+        padding: 0 8px;
+    }
+
+    .big1{
+        height: auto;
+        padding: 15px 10px;
+    }
+    .skills-text{
+        font-size: 34px;
+        text-align: center;
+    }
+    .text{
+        font-size: 14px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    
+    .coursework{
+        margin-left: 50px;
+        margin-right: 12px;
+        margin-top: 15px;
+        padding-bottom: 10px;
+    }
+    .programing-text{
+        font-size: 16px;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+    .progress-container{
+        width: 70%;
+        margin-left: 40px;
+        margin-top: 35px;
+    }
+    .html-icon{
+            position: absolute;
+            top: -15px;
+            left: -45px;
+        }
+        .css-icon{
+            position: absolute;
+            top: -15px;
+            left: -10px;
+            font-size: 30px;
+        }
+        .js-icon{
+            position: absolute;
+            top: -19px;
+            left: -25px;
+            
+        }
+        .c-icon{
+             position: absolute;
+            font-size: 40px;
+            top: -19px;
+            left: -25px;
+           
+        }
+        .assemblu-icon{
+            position: absolute;
+            top: -23px;
+            left: -28px;
+        }
+        .code-icon{
+            position: absolute;
+            
+            font-size: 30px;
+            top: -5px;
+            left: 5px;
+            color: rgb(27, 150, 27);
+        }
+
+    .data-icon{
+         position: absolute;
+        font-size: 30px;
+        color: rgb(27, 150, 27);
+        left: 25px;
+        top: 23px;
+
+    }
+    
+    .algorithms{
+        padding: 15px 10px;
+    }
+    .algorithm-text{
+        font-size: 17px;
+    }
+    .skill-item{
+        max-width: 100%;
+    }
+    .skill-name{
+        font-size: 13px;
+        margin-left: 30px;
+    }
+    .dots-rating{
+        gap: 6px;
+        margin-right: 30px;
+    }
+    .dot{
+        width: 12px;
+        height: 12px;
+    }
+    .vs-icon{
+            
+            position: absolute;
+            top: -15px;
+            left: -25px;
+        }
+        .git-icon{
+             position: absolute;
+            top: -19px;
+            left: -25px;   
+        }
+        .linux-icon{
+            position: absolute;
+            top: -25px;
+            left: -30px; 
+        }
+    .react-icon{
+        top: 20px;
+        left: 80px;
+    }
+    .nodejs-icon{
+        top: 18px;
+        left: 95px;
+    }
+    .frame-icon{
+        position: absolute;
+        font-size: 35px;
+        color: rgb(27, 150, 27);
+        left: 85px;
+        top: 20px;
+
+    }
+
+    
+    .big4{
+        grid-template-rows: 100px 100px;
+        padding-top: 20px;
+        gap: 0x;
+    }
+    .soft-text{
+        font-size: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 12px;
+        text-align: center;
+    }
+    .soft-icon{
+        left: 120px;
+        top: 10px;
+        font-size: 20px;
+    }
+    .cercular-img{
+        height: 55px;
+    }
+    .cercular-text{
+        font-size: 12px;
+        text-align: center;
+    }
+
+   
+    
+    .alg-flag{
+    display: inline-block;
+     margin-top: 8px;
+     margin-left: 10px;
+    }
+    .lang{
+     display: inline-block;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(224, 255, 230);
+    margin-top: 23px;
+    margin-left: 5px;
+            
+    }
+    .lang-lvl-div{
+    background-color: rgba(42, 102, 56, 0.493);       
+    border: 1px solid rgba(189, 185, 185, 0.473);
+    height: 25px;
+    width: 80px;
+    
+    margin-top: 16px;
+    margin-left: 60px;
+    border-radius: 7px;
+    }
+    .lang-lvl-div1{
+    display: inline-block;
+    margin-left: 10px;
+    }
+    .lang-title{
+        font-size: 16px;
+    }
+    .world-icon{
+        left: 110px;
+        top: 15px;
+        font-size: 20px;
+    }
+    .languages-div{
+        flex-direction: row;
+        gap: 8px;
+    }
+    .lang-icon-div{
+        margin-left: 13px;
+        margin-right: 0;
+        width: 130px;
+    }
+    .lang-text-div{
+            margin-right: 0;
+            width: 210px;
+        }
+    
+}
