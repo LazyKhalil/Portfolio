@@ -8,18 +8,18 @@ body{
             margin: 0;
         }
        
-        #bg-video {
-        position: fixed;   
+       .bg-video {
+        position: fixed;
         right: 0;
         bottom: 0;
-        min-width: 100%;   
-        min-height: 100%;  
-        z-index: -1;       
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
         object-fit: cover;
-        transform: translateZ(0);
         }
-        html {
-        overflow-x: hidden;
+
+       .bg-video-mobile {
+        display: none;     
         }
         .header{
             height: 50px;
@@ -168,8 +168,8 @@ body{
         }
         .education-level{
             font-family: "Montserrat", sans-serif;
-            font-weight: 700;
-            font-size: 20px;
+            font-weight: 800;
+            font-size: 17px;
             color: rgb(215, 246, 221);
             margin-top: 10px;
             margin-left: 5px;
@@ -313,7 +313,7 @@ body{
         }
         }
 
-        .box {
+        div {
         animation: fadeIn 1.5s ease-out forwards;
         }
         
@@ -345,6 +345,12 @@ body{
 
 
 @media (max-width: 600px) {
+    .bg-video-desktop {
+        display: none;   
+    }
+    .bg-video-mobile {
+        display: block; 
+    }
     .header{
         flex-wrap: wrap;
         height: auto;
