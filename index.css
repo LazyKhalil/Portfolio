@@ -12,6 +12,10 @@
         min-height: 100%;  
         z-index: -1;       
         object-fit: cover;
+        transform: translateZ(0);
+        }
+        html {
+        overflow-x: hidden;
         }
         .header{
             height: 50px;
@@ -229,7 +233,7 @@
         }
         }
 
-        div {
+        .box {
         animation: fadeIn 1.5s ease-out forwards;
         }
     
