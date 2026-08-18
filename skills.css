@@ -1,6 +1,7 @@
  body{
            
             margin: 0;
+            overflow-x: hidden;
            
         }
          p{
@@ -247,7 +248,8 @@
         .algorithm-text{
             font-weight: 700;
             font-family: "Montserrat", sans-serif;
-            text-align: center;
+            text-align: left;
+            margin-left: 45px;
             font-size: 20px;
             color: rgb(224, 255, 230);
             margin-top: 15px;
@@ -258,7 +260,6 @@
             position: absolute;
             font-size: 30px;
             color: rgb(27, 150, 27);
-            left: 95px;
 
         }
         .vs-icon{
@@ -295,8 +296,6 @@
              position: absolute;
             font-size: 35px;
             color: rgb(27, 150, 27);
-            left: 160px;
-            top: -5px;
 
         }
         .big4{
@@ -428,7 +427,8 @@
              font-weight: 700;
             font-family: "Montserrat", sans-serif;
             color: rgb(224, 255, 230);
-            text-align: center;
+            text-align: left;
+            margin-left: 45px;
             margin-top: 15px;  
            
         } 
@@ -436,8 +436,6 @@
           position: absolute;
             font-size: 30px;
             color: rgb(27, 150, 27);
-            left: 175px;
-            top: 13px;
         }
         @keyframes fadeIn {
         from {
