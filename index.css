@@ -326,7 +326,7 @@
     .box{
         min-height: auto;
         padding-bottom: 15px;
-          background-color: rgba(25, 99, 56, 0.2); 
+           background-color: rgba(21, 79, 45, 0.27); 
             backdrop-filter: blur(20px);                
             -webkit-backdrop-filter: blur(20px);       
     }
